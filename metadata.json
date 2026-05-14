@@ -1,0 +1,6 @@
+{
+  "name": "Giftland Studios & Restaurant",
+  "description": "A premium photography studio and upscale restaurant in Jogoo, Kisii, Kenya. Where Art Meets Appetite.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

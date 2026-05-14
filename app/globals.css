@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui;
+  --font-serif: var(--font-playfair), ui-serif, Georgia, serif;
+  --font-accent: var(--font-dancing), cursive;
+
+  --color-primary-gold: #C9973A;
+  --color-deep-black: #0D0D0D;
+  --color-warm-cream: #F5EDD6;
+  --color-card-bg: #1A1A1A;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@keyframes gradient-animate {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animated-gradient {
+  background: linear-gradient(-45deg, #0D0D0D, #C9973A, #0D0D0D, #F5EDD6);
+  background-size: 400% 400%;
+  animation: gradient-animate 15s ease infinite;
+}
+
+.glass-card {
+  background: rgba(26, 26, 26, 0.4);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(201, 151, 58, 0.1);
+}
+
+.gold-glow:hover {
+  box-shadow: 0 0 20px rgba(201, 151, 58, 0.3);
+}
